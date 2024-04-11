@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vocabulary Trainer App">
+        <title>Vocabulary Trainer</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Vocabulary Trainer</h1>
+        <div class="container" id="nav-btns-container">
+            <input type="radio" id="nav-btn-add" name="nav-btn" value="add" checked>
+            <label for="nav-btn-add">ADD</label>
+            
+            <input type="radio" id="nav-btn-reverse" name="nav-btn" value="reverse">
+            <label for="nav-btn-reverse">REVERSE</label>
+            
+            <input type="radio" id="nav-btn-search" name="nav-btn" value="search">
+            <label for="nav-btn-search">SEARCH</label>
+        </div>
+
+            <!--ADD   REVERSE   SEARCH-->
+            <!--lower <nav> = display interface (-) decreases - grid - increases (+)-->
+        <div class="container" id="key-container">
+            <h2>Vokabel</h2>
+            <textarea placeholder="Schreib hier die Vokabel"></textarea>
+        </div>
+        <div class="container" id="value-container">
+            <div class="container" id="radio-btns-container">
+                <input type="radio" name="radio-btn" id="übersetzung-radio-btn" value="übersetzung" checked>
+                <label for="übersetzung-radio-btn"><strong>Übersetzung</strong></label>
+
+                <input type="radio" name="radio-btn" id="bedeutung-radio-btn" value="bedeutung">
+                <label for="bedeutung-radio-btn"><strong>Bedeutung</strong></label>
+            </div>
+            <textarea placeholder="Schreib hier"></textarea>
+        </div>
+        <button id="save-btn">Save</button>
+        
+        <footer><p>&copy; 2024, Vokabeltrainer, Marcelo Ruediger</p></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
