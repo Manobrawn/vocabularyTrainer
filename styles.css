@@ -1,0 +1,128 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-btns {
+    width: 75px;
+    height: 20px;
+    margin: 0.2rem 0;
+}
+
+button {
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin: 0 0.2rem;
+    border-radius: 10%;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    border: 5px ridge #ccc;
+    width: 300px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.2rem;
+    text-align: center;
+    padding: 0.2rem;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.grid-container::-webkit-scrollbar {
+    display: none;
+    /*width: 2px;*/
+}
+
+/*.grid-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10%; 
+}*/
+
+.grid-container > * {
+    border: 1px dashed black;
+    width: 90px;
+    height: 90px;
+    align-content: center;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+#set-goal-display-container {
+    display: inline-flex;
+}
+
+.zoom-btns {
+    display: inline-flex;
+    margin-left: 5rem;
+}
+
+.bottom-btns {
+    width: 50px;
+    height: 20px;
+    padding-top: 0.3rem;
+}
+
+dialog {
+    top: 20%;
+    left: 39%;
+    width: 250px;
+    text-align: center;
+}
+
+.dialog-btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+dialog > textarea {
+    width: 250px;
+    height: 4.5rem;
+}
+
+dialog > * {
+    margin: 1rem 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media only screen and (max-width: 760px) {
+    dialog {
+        top: 18%;
+        left: 18%
+    }
+}
