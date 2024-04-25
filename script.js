@@ -152,10 +152,10 @@ const hoverDeleteEditBtns = () => {
             }
         });
 
-        /*span.addEventLister("touchcancel", () => {
+        span.addEventListener("touchcancel", () => {
             deleteBtn.remove();
             editBtn.remove();
-        });*/
+        });
         
         deleteBtn.addEventListener("click", () =>{
             console.log("delete was clicked!")
