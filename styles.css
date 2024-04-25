@@ -48,13 +48,7 @@ button {
 
 .grid-container::-webkit-scrollbar {
     display: none;
-    /*width: 2px;*/
 }
-
-/*.grid-container::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10%; 
-}*/
 
 .grid-container > * {
     border: 1px dashed black;
@@ -63,6 +57,12 @@ button {
     align-content: center;
     overflow: hidden;
     font-size: 0.8rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.grid-container > *:hover{
+    background-color: #f5f5f5;
 }
 
 #set-goal-display-container {
@@ -81,9 +81,9 @@ button {
 }
 
 dialog {
-    top: 20%;
-    left: 39%;
-    width: 250px;
+    top: 17%;
+    left: 37%;
+    width: 200px;
     text-align: center;
 }
 
@@ -94,8 +94,8 @@ dialog {
 }
 
 dialog > textarea {
-    width: 250px;
-    height: 4.5rem;
+    width: 200px;
+    height: 4rem;
 }
 
 dialog > * {
@@ -118,6 +118,26 @@ input[type="radio"] {
 input[type="radio"]:checked + .radio-label {
     background-color: #007bff;
     color: #fff;
+}
+
+.delete-edit-btns {
+    position: absolute;
+    cursor: pointer; 
+    color: #ff9999;
+}
+
+#delete-btn {
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    padding-right: 0.3rem;
+}
+
+#edit-btn {
+    top: 0;
+    left: 0;
+    padding-left: 0.3rem;
+    font-size: 0.7rem;
 }
 
 @media only screen and (max-width: 760px) {
